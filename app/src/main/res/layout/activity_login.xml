@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/bigpixels"
+        android:text="@string/GameCritics"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/policemanGifError"
+        android:layout_width="263dp"
+        android:layout_height="206dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="331dp"
+        android:layout_height="512dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/pixelmonitor" />
+
+    <ImageView
+        android:layout_width="307dp"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="136dp"
+        android:src="@drawable/textbox" />
+
+    <ImageView
+        android:layout_width="307dp"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="203dp"
+        android:src="@drawable/textbox" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="557dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/smallpixels"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="491dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/smallpixels"
+        android:hint="Email"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="622dp"
+        android:layout_marginBottom="307dp"
+        android:fontFamily="@font/smallpixels"
+        android:onClick="Login"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:onClick="Register"
+        android:text="Register"
+        android:fontFamily="@font/smallpixels"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/smallpixels"
+        android:layout_marginBottom="46dp"
+        android:textColor="@color/white"
+        android:text="You are a nerd and you don't have an accont?" />
+
+</RelativeLayout>
