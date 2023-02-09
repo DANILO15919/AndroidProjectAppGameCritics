@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DetailsActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/game_name_details"
+            android:text="Game name"
+            android:textSize="30dp"
+            android:fontFamily="@font/bigpixels"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/game_image_details"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="53dp"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="-9dp"
+                android:src="@drawable/pixel_frame">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignEnd="@+id/game_rating_details"
+                android:layout_alignBottom="@+id/game_rating_details"
+                android:layout_marginEnd="-11dp"
+
+                android:layout_marginBottom="-45dp"
+                android:src="@drawable/monitor_for_the_details">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/game_rating_details"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="27dp"
+                android:fontFamily="@font/smallpixels"
+                android:text="85"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="60dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/bigpixels"
+                android:text="Rated By: "
+                android:textColor="@color/purple_200" />
+            <TextView
+                android:id="@+id/ratingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/bigpixels"
+                android:text="Rating"
+                android:textColor="@color/purple_200" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:textAlignment="center"
+            android:fontFamily="@font/bigpixels"
+            ></TextView>
+        <TextView
+            android:background="@drawable/edit_text"
+            android:id="@+id/game_description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="Description"
+            android:fontFamily="@font/smallpixels"
+            ></TextView>
+    </LinearLayout>
+
+
+
+</ScrollView>
+</LinearLayout>

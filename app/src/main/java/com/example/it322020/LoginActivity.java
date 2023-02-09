@@ -72,6 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(task.isSuccessful())
                 {
                 startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                    finish();
                 }
                 else
                 {
